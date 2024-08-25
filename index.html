@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operações Matemáticas</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="JS/scripts.js" defer></script>
+</head>
+<body>
+    <h2>Digite o número e confirme para gerar uma tabuada</h2>
+    <form id="operation-form">
+        <div class="form-control">
+            <label>Número:</label>
+            <input type="number" id="number" placeholder="3" />
+        </div>
+        <div class="form-control">
+            <label>Operação:</label>
+            <select id="operator">
+                <option value="multiplication">Multiplicação</option>
+                <option value="division">Divisão</option>
+                <option value="subtraction">Subtração</option>
+                <option value="addition">Soma</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Até:</label>
+            <input type="number" id="operand" placeholder="Digite o número de operações" value="10" />
+        </div>
+        <input type="submit" value="Calcular" />
+    </form>
+    <div id="operation-table">
+        <h2 id="operation-title">Operação com o número: <span></span></h2>
+        <div id="operation-operations">
+            <p>Informe um número para calcular uma operação...</p>
+        </div>
+    </div>
+</body>
+</html>
